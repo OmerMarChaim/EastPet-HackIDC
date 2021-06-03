@@ -11,7 +11,7 @@ const [animal, setAnimals] = useState([
     },
     {
         name:'kitty',
-        url: "https://jngnposwzs-flywheel.netdna-ssl.com/wp-content/uploads/2019/07/IMG_3481-768x566.jpg",
+        url: "https://c4.wallpaperflare.com/wallpaper/348/422/333/cat-4k-hd-wallpaper-preview.jpg",
     },
 ]);
 
@@ -26,8 +26,12 @@ const [animal, setAnimals] = useState([
                 preventSwipe={['up','down']}
                 >
                     <div
-                    style={{ backgroundImage: 'url(${animals.url})' }}
                      className ="card">
+                        <img src={animal.url} 
+                        resizeMode='contain'
+                         width= '60x'>
+                        </img>
+
                          <h3>{animal.name}</h3>
 
                     </div>
