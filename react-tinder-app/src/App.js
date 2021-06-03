@@ -3,43 +3,31 @@ import './App.css';
 import Header from './Header'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import TinderCards from './TinderCards';
+import Chats from "./Chats"
 
 function App() {
   return (
     <div className="App">
       {/*start of Header */ }
-      <Header /> 
+      <Header />
+      {/* End of Header */}
+     
       <Router>
-        {/* End of Header */}
-
         <Switch>
           <Route path="/chat">
               <h1>I am chat page</h1>
-          </Route>
-                  
-          
+              <Chats/>
+          </Route>  
         </Switch>
         <Route path="/tinderCards">
-        <h1>I am tinder cards</h1>
           <TinderCards>
-
           </TinderCards>
-      </Route>
-
-      <Route path="/">
-            <h1>I am homepage</h1>
-          </Route>
-
-      {}
-      {}
-      {}
-
+        </Route>
+      
+        <Route path="/">
+          <h1></h1>
+        </Route>
       </Router>
-
-      
-      
-      
-
     </div>
   );
 }
