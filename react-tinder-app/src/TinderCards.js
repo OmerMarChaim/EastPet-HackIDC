@@ -26,16 +26,15 @@ const [animal, setAnimals] = useState([
                 preventSwipe={['up','down']}
                 >
                     <div
-                    style={{ backgroundImage: 'url(${animals.url})' }}
+                    style={{ backgroundImage: 'url(${animal.url})' }}
                      className ="card">
                          <h3>{animal.name}</h3>
-
                     </div>
 
                 </TinderCard>
             ))}
-            </div>
         </div>
+    </div>
         
     );
   }
