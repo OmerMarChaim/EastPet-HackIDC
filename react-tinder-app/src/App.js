@@ -26,16 +26,13 @@ function App() {
               <h2>Roi is the king</h2>
               <Chats/>
           </Route>  
+        
+          <Route path="/">
+            <Header />
+            <TinderCards/>
+            <SwipeButtons/>
+          </Route>
         </Switch>
-        <Route path="/tinderCards">
-          <Header />
-          <TinderCards>
-          </TinderCards>
-        </Route>
-      
-        <Route path="/">
-          <h1></h1>
-        </Route>
       </Router>
     </div>
     

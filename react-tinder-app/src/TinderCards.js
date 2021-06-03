@@ -18,7 +18,6 @@ function TinderCards(){
 
     return (
         <div>
-            <h1>Tinder Cards</h1>
             <div className = "tinderCards__cardContainer">
             {animal.map(animal => (
                 <TinderCard
