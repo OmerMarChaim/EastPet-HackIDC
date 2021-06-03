@@ -14,7 +14,6 @@ const [animals, setAnimals] = useState([
         url: "https://jngnposwzs-flywheel.netdna-ssl.com/wp-content/uploads/2019/07/IMG_3481-768x566.jpg",
     },
 ]);
-
     return (
         <div>
             <h1>Tinder Cards</h1>

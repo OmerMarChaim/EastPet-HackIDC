@@ -1,20 +1,23 @@
 import React from 'react'
-// import AcUnitIcon from '@material-ui/icons/AcUnit';
 import "./Header.css";
+import PersonIcon from '@material-ui/icons/Person';
+import ChatBubbleIcon from '@material-ui/icons/ChatBubble';
+import PetsIcon from '@material-ui/icons/Pets';
+import IconButton from '@material-ui/core/IconButton';
 
-function Header() {
-    return (
-        //Bem
-    <div className = "header">
-        <h2>Hey</h2>
-        {/* <AcUnitIcon className="header_icon" fontSize="large"/> */}
-        <img
-         className="header_logo" 
-         src ="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2019/09/iStock-1090668790-632x422.jpg"
-         alt=""/>
-        <h3>Ho</h3>
-    </div>
-    );
-  }
+
+function Header(){
+    return ( 
+        <div className="header">
+            <IconButton>
+                <PersonIcon />
+            </IconButton>
+            <PetsIcon />
+            <IconButton> 
+                <ChatBubbleIcon />
+            </IconButton>
+        </div>
+    )
+}
 
   export default Header
