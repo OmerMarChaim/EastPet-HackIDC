@@ -11,7 +11,7 @@ function App() {
       <Header /> 
       <Router>
         {/* End of Header */}
-        <Switch>   
+        <Switch>
           <Route path="/chat">
               <h1>I am chat page</h1>
           </Route>
@@ -19,7 +19,6 @@ function App() {
           <Route path="/">
             <h1>I am homepage</h1>
           </Route>
-
         </Switch>
 
       {}
