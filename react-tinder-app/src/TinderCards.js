@@ -14,6 +14,7 @@ const [animals, setAnimals] = useState([
         url: "https://jngnposwzs-flywheel.netdna-ssl.com/wp-content/uploads/2019/07/IMG_3481-768x566.jpg",
     },
 ]);
+
     return (
         <div>
             <h1>Tinder Cards</h1>
@@ -25,7 +26,7 @@ const [animals, setAnimals] = useState([
                 preventSwipe={['up','down']}
                 >
                     <div
-                    style={{ backgroundImage: "http://cdn.akc.org/content/article-body-image/samoyed_puppy_dog_pictures.jpg" }}
+                    style={{ backgroundImage: 'url(${animals.url})' }}
                      className ="card">
                          <h3>{animal.name}</h3>
 
@@ -33,8 +34,17 @@ const [animals, setAnimals] = useState([
 
                 </TinderCard>
             ))}
+            <h1>check</h1>
         </div>
+        
     );
   }
 
   export default TinderCards
+  /* 
+  Team36HackIdc
+  git add .
+  git commit -m " "
+  git pull
+  git push
+  /*
