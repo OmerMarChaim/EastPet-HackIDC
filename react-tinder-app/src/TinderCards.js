@@ -29,13 +29,12 @@ const [animal, setAnimals] = useState([
                     style={{ backgroundImage: 'url(${animal.url})' }}
                      className ="card">
                          <h3>{animal.name}</h3>
-
                     </div>
 
                 </TinderCard>
             ))}
-            </div>
         </div>
+    </div>
         
     );
   }
