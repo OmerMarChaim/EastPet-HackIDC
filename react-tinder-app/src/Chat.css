@@ -1,4 +1,4 @@
-.chat{
+.chat {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,18 +11,18 @@ a {
     color: inherit;
 }
 
-.chat_details{
+.chat_details {
     flex: 1;
 }
 
-.chat_details > p{
+.chat_details>p {
     color: gray;
 }
 
-.chat_timestamp{
+.chat_timestamp {
     color: lightgray;
 }
 
-.chat_image{
+.chat_image {
     margin-right: 20px;
 }
