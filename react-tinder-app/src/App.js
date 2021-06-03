@@ -3,8 +3,8 @@ import './App.css';
 import Header from './Header'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import TinderCards from './TinderCards';
-import Chats from "./Chats"
-
+import Chats from "./Chats";
+import SwipeButtons from "./SwipeButtons";
 function App() {
   return (
     <div className="App">
@@ -18,17 +18,15 @@ function App() {
               <h1>I am chat page</h1>
               <Chats/>
           </Route>  
+        
+          <Route path="/">
+            <TinderCards/>
+            <SwipeButtons />
+          </Route>
         </Switch>
-        <Route path="/tinderCards">
-          <TinderCards>
-          </TinderCards>
-        </Route>
-      
-        <Route path="/">
-          <h1></h1>
-        </Route>
       </Router>
     </div>
+    
   );
 }
 

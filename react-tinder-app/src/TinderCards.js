@@ -8,9 +8,12 @@ function TinderCards(){
     const [animal, setAnimals] = useState([]);
 
     useEffect(() =>{
-     database.collection('PetsInfo').onSnapshot((snapshot) => 
+   const unsubscribe =  database.collection('PetsInfo').onSnapshot((snapshot) => 
      setAnimals(snapshot.docs.map((doc) => doc.data()))
     );
+    return () =>{
+        unsubscribe(); 
+    };
     } ,[]);
 
     return (
