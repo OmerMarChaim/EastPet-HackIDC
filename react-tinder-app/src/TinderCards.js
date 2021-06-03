@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from "react";
 import TinderCard from "react-tinder-card";
+import './TinderCards.css';
 
 function TinderCards(){
 const [animals, setAnimals] = useState([
@@ -13,9 +14,11 @@ const [animals, setAnimals] = useState([
         url: "https://jngnposwzs-flywheel.netdna-ssl.com/wp-content/uploads/2019/07/IMG_3481-768x566.jpg",
     },
 ]);
+
     return (
         <div>
             <h1>Tinder Cards</h1>
+
             {animals.map(animal => (
                 <TinderCard
                 className="swipe"
@@ -23,7 +26,7 @@ const [animals, setAnimals] = useState([
                 preventSwipe={['up','down']}
                 >
                     <div
-                    style={{ backgroundImage: 'url(${animal.url})'}}
+                    style={{ backgroundImage: 'url(${animals.url})' }}
                      className ="card">
                          <h3>{animal.name}</h3>
 
@@ -31,8 +34,17 @@ const [animals, setAnimals] = useState([
 
                 </TinderCard>
             ))}
+            <h1>check</h1>
         </div>
+        
     );
   }
 
   export default TinderCards
+  /* 
+  Team36HackIdc
+  git add .
+  git commit -m " "
+  git pull
+  git push
+  /*

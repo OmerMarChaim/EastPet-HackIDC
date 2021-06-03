@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Tinder from './TinderCards'
+import TinderCards from './TinderCards';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header /> 
       <Router>
         {/* End of Header */}
+
         <Switch>
           <Route path="/chat">
               <h1>I am chat page</h1>
@@ -20,6 +22,12 @@ function App() {
             <h1>I am homepage</h1>
           </Route>
         </Switch>
+        <Route path="/tinderCards">
+        <h1>I am tinder cards</h1>
+          <TinderCards>
+
+          </TinderCards>
+      </Route>
 
       {}
       {}
