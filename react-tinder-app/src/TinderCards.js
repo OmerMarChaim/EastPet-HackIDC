@@ -26,7 +26,7 @@ const [animals, setAnimals] = useState([
                 preventSwipe={['up','down']}
                 >
                     <div
-                    style={{ backgroundImage: 'url(${animals.url})' }}
+                    style={{ backgroundImage: 'url(${animal.url})' }}
                      className ="card">
                          <h3>{animal.name}</h3>
 
@@ -47,4 +47,4 @@ const [animals, setAnimals] = useState([
   git commit -m " "
   git pull
   git push
-  /*
+  */
