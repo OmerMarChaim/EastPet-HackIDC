@@ -22,8 +22,8 @@ function App() {
           </Route>  
           <Route path="/chat">
               <Header backButton='/' />
-              <h1>I am chat page</h1>
-              <h2>Roi is the king</h2>
+              <h1 className='i_am_chat_page'>I am chat page</h1>
+              <h2 className="roi_chats_page">Roi is the king</h2>
               <Chats/>
           </Route>  
         
