@@ -18,15 +18,17 @@ function App() {
               <h1>I am chat page</h1>
               <Chats/>
           </Route>  
-        </Switch>
-        <Route path="/tinderCards">
-          <TinderCards>
-          </TinderCards>
-        </Route>
-      
-        <Route path="/">
-          <h1></h1>
-        </Route>
+       
+          <Route path="/tinderCards">
+            <TinderCards>
+            </TinderCards>
+          </Route>
+        
+          <Route path="/">
+            <h1></h1>
+          </Route>
+          
+         </Switch>
       </Router>
     </div>
   );
