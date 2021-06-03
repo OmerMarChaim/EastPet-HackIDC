@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from "react";
 import TinderCard from "react-tinder-card";
+import './TinderCards.css';
 
 function TinderCards(){
 const [animals, setAnimals] = useState([
@@ -17,6 +18,7 @@ const [animals, setAnimals] = useState([
     return (
         <div>
             <h1>Tinder Cards</h1>
+
             {animals.map(animal => (
                 <TinderCard
                 className="swipe"
@@ -24,7 +26,7 @@ const [animals, setAnimals] = useState([
                 preventSwipe={['up','down']}
                 >
                     <div
-                    style={{ backgroundImage: 'url(${animal.url})'}}
+                    style={{ backgroundImage: "http://cdn.akc.org/content/article-body-image/samoyed_puppy_dog_pictures.jpg" }}
                      className ="card">
                          <h3>{animal.name}</h3>
 
