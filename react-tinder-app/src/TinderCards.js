@@ -4,7 +4,7 @@ import TinderCard from "react-tinder-card";
 import './TinderCards.css';
 
 function TinderCards(){
-const [animals, setAnimals] = useState([
+const [animal, setAnimals] = useState([
     {
         name: 'dogger',
         url:"http://cdn.akc.org/content/article-body-image/samoyed_puppy_dog_pictures.jpg",
@@ -18,8 +18,8 @@ const [animals, setAnimals] = useState([
     return (
         <div>
             <h1>Tinder Cards</h1>
-
-            {animals.map(animal => (
+            <div className = "tinderCards_cardContainer">
+            {animal.map(animal => (
                 <TinderCard
                 className="swipe"
                 key={animal.name}
@@ -34,7 +34,7 @@ const [animals, setAnimals] = useState([
 
                 </TinderCard>
             ))}
-            <h1>check</h1>
+            </div>
         </div>
         
     );
