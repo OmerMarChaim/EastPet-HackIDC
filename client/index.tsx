@@ -1,8 +1,8 @@
 import React from 'react';
 render(
-    <h1>
-      Hello, worlrd!
-      </h1>,
+
+    <h1>Lets go, we're about to win this!</h1>,
+
     document.getElementById('root')
   );
 
