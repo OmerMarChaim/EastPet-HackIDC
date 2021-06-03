@@ -9,15 +9,11 @@ import ChatScreen from "./ChatScreen";
 
 function App() {
   return (
-    <div className="App">
-      {/*start of Header */ }
-      {/* <Header /> */}
-      {/* End of Header */}
-     
+    <div className="App"> 
       <Router>
         <Switch>
           <Route path="/chat/:person">
-              <Header backButton='/chat' />
+              <Header backButton='/' />
               <ChatScreen />
           </Route>  
           <Route path="/chat">
