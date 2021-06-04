@@ -17,9 +17,7 @@ function App() {
       <Router>
       
         <Switch>
-        <UserProvider>
-        <Application />
-        </UserProvider>
+       
           <Route path="/chat/:person">
               <Header backButton='/' />
               <ChatScreen />
@@ -30,13 +28,16 @@ function App() {
               <SignIn />
           </Route>  
 
-          <Route path="/TinderCards">
+          <Route path="/tinderCards">
               <TinderCards />
           </Route>  
 
           <Route path="/SignUp">
               <Header/>
-              <SignUp />
+              {/* <SignUp /> */}
+              <UserProvider>
+              <Application />
+              </UserProvider>
           </Route>  
           <Route path="/chat">
               <Header backButton='/' />
