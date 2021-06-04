@@ -1,0 +1,35 @@
+.chatScreen_message {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+} 
+
+.chatScreen_text {
+    margin-left: 10px;
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.chatScreen_timestamp {
+    text-align: center;
+    color: gray;
+    padding: 20px;
+}
+
+.chatScreen_textUser {
+    margin-left: auto;
+    padding: 15px;
+    background-color: #29b3cd;
+    border-radius: 20px;
+    color: white;
+}
+
+.roi_chats_page {
+    text-align: center;
+}
+
+.i_am_chat_page {
+    text-align: center;
+}
