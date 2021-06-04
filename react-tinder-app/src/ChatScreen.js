@@ -33,10 +33,18 @@ function ChatScreen() {
                 </div>
               ) : (
                 <div className="chatScreen_message">
-                    <p className='chatScreen_textUser'>{message.message}</p>
+                  <p className='chatScreen_textUser'>{message.message}</p>
                 </div>
               )
+              
+              
             ))}
+            
+            <form className="chatScreen_input">
+                    <input className="chatScreen_inputField" placeholder="Type a message.." type="text" />
+                    <button className="chatScreen_sendButton">SEND</button>
+            </form>
+            
         </div>
     );
 }

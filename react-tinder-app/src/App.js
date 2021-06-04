@@ -6,6 +6,7 @@ import TinderCards from './TinderCards';
 import Chats from "./Chats";
 import SwipeButtons from "./SwipeButtons";
 import ChatScreen from "./ChatScreen";
+import SignIn from "./SignIn";
 
 function App() {
   return (
@@ -16,6 +17,12 @@ function App() {
               <Header backButton='/chat' />
               <ChatScreen />
           </Route>  
+
+          <Route path="/SignIn">
+              <Header/>
+              <SignIn />
+          </Route>  
+
           <Route path="/chat">
               <Header backButton='/' />
               <Chats/>
