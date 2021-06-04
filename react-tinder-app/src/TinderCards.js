@@ -3,7 +3,7 @@ import {useState} from "react";
 import TinderCard from "react-tinder-card";
 import database from './firebase';
 import './TinderCards.css';
-
+import SwipeButtons from './SwipeButtons';
 function TinderCards(){
     const [animal, setAnimals] = useState([]);
 
@@ -30,7 +30,7 @@ function TinderCards(){
                      className ="card">
                          <h3>{animal.name}</h3>
                     </div>
-
+                    <SwipeButtons/>
                 </TinderCard>
             ))}
         </div>

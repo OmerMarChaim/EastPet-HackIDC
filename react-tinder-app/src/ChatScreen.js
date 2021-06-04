@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import "./ChatScreen.css";
 
 function ChatScreen() {
+    const [input, setInput] =  useState('');
     const [messages, setMessages] = useState([
         {
             name: 'Oren',
@@ -18,9 +19,16 @@ function ChatScreen() {
             message: 'Hey, call me!'
         }
     ])
+
+    const handleSend = (e)=> {
+        e.preventDefault();
+        setMessages([...messages, {message: input}]);
+        setInput(""); 
+    }
+
     return (
         <div className='chatScreen'>
-            <p className='chatScreen_timestamp'>YOU MATCHED WITH DOGGY ON 10/11/21</p>
+            <p className='chatScreen_timestamp'>YOU MATCHED WITH CATDOG ON 10/11/21</p>
             {messages.map(message => (
               message.name ? (
                 <div className="chatScreen_message">
@@ -41,10 +49,15 @@ function ChatScreen() {
             ))}
             
             <form className="chatScreen_input">
-                    <input className="chatScreen_inputField" placeholder="Type a message.." type="text" />
-                    <button className="chatScreen_sendButton">SEND</button>
+                <input
+                    value={input} 
+                    onChange= {e => setInput(e.target.value)}
+                    className="chatScreen_inputField" 
+                    placeholder="Type a message.." 
+                    type="text" 
+                />
+                <button onClick={handleSend} type="submit" className="chatScreen_sendButton">SEND</button>
             </form>
-            
         </div>
     );
 }

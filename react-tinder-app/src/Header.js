@@ -21,7 +21,7 @@ function Header({backButton}){
                     <PersonIcon />
                 </IconButton>
             )}
-            <Link to = "/">
+            <Link to = "/TinderCards">
                 <PetsIcon />
             </Link>
             <Link to = "/chat">
