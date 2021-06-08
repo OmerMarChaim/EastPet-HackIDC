@@ -30,7 +30,7 @@ function TinderCards(){
                      className ="card">
                          <h3>{animal.name}</h3>
                     </div>
-                    <SwipeButtons/>
+                     {/* <SwipeButtons/>  */}
                 </TinderCard>
             ))}
         </div>
